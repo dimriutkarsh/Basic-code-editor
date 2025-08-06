@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code Editor</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <section class="container">
+    <header class="header">
+        <h1 >Code Editor</h1>
+    <p>Created by utkarsh dimri</p>
+    </header>
+    <div class="editor">
+      <div class="left">
+        <label>HTML</label>
+        <textarea onkeyup="run()" spellcheck="false" id="html-code" placeholder="Write HTML code..."></textarea>
+
+        <label>CSS</label>
+        <textarea onkeyup="run()" spellcheck="false" id="css-code" placeholder="Write CSS code..."></textarea>
+
+        <label>JavaScript</label>
+        <textarea onkeyup="run()" spellcheck="false" id="js-code" placeholder="Write JavaScript code..."></textarea>
+      </div>
+      <div class="right">
+        <label>OUTPUT</label>
+        <iframe id="output"></iframe>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
